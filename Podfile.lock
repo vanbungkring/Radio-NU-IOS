@@ -1,0 +1,55 @@
+PODS:
+  - AFNetworkActivityLogger (2.0.4):
+    - AFNetworking/NSURLConnection (~> 2.0)
+    - AFNetworking/NSURLSession (~> 2.0)
+  - AFNetworking (2.6.3):
+    - AFNetworking/NSURLConnection (= 2.6.3)
+    - AFNetworking/NSURLSession (= 2.6.3)
+    - AFNetworking/Reachability (= 2.6.3)
+    - AFNetworking/Security (= 2.6.3)
+    - AFNetworking/Serialization (= 2.6.3)
+    - AFNetworking/UIKit (= 2.6.3)
+  - AFNetworking/NSURLConnection (2.6.3):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.6.3):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.6.3)
+  - AFNetworking/Security (2.6.3)
+  - AFNetworking/Serialization (2.6.3)
+  - AFNetworking/UIKit (2.6.3):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - Bolts/Tasks (1.5.0)
+  - DateTools (1.7.0)
+  - HMSegmentedControl (1.5.2)
+  - Parse (1.10.0):
+    - Bolts/Tasks (~> 1.5)
+  - Realm (0.96.2):
+    - Realm/Headers (= 0.96.2)
+  - Realm/Headers (0.96.2)
+  - StreamingKit (0.1.26)
+
+DEPENDENCIES:
+  - AFNetworkActivityLogger (~> 2.0)
+  - AFNetworking (~> 2.6)
+  - DateTools (~> 1.7)
+  - HMSegmentedControl (~> 1.5)
+  - Parse (~> 1.10)
+  - Realm
+  - StreamingKit (~> 0.1)
+
+SPEC CHECKSUMS:
+  AFNetworkActivityLogger: 121486778117d53b3ab1c61d264b88081d0c3eee
+  AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
+  Bolts: 722ab9a4f8b50fc4ed1b9998a5a7a2b3f16d80b4
+  DateTools: 53288ee8b905fdc75897a1e6b5cc0144b14cba60
+  HMSegmentedControl: 83b9686022d2176fb6457d2bdb61e5d6393fed7d
+  Parse: 90b2544822200f84b18bfacc4e8b0a3a6c3584a2
+  Realm: 3ce8448151c571e90b85002d984d7f93f54fc8a3
+  StreamingKit: e4fc11f28c32f542266b4f0dd960e4c89fd099dd
+
+COCOAPODS: 0.39.0

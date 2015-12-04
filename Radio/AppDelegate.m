@@ -7,7 +7,10 @@
 //
 
 #import "AppDelegate.h"
-
+#import "HomeViewController.h"
+#import "VanNavigationController.h"
+#import "ScheduleDataModels.h"
+#import <AFNetworkActivityLogger/AFNetworkActivityLogger.h>
 @interface AppDelegate ()
 
 @end
@@ -17,6 +20,17 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    
+    [ScheduleResponse getScheduleWithCompletionBlock:nil];
+    [[AFNetworkActivityLogger sharedLogger] startLogging];
+    [AFNetworkActivityLogger sharedLogger].level = AFLoggerLevelDebug;
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.backgroundColor = [UIColor whiteColor];
+    HomeViewController *homeViewControllers = [[HomeViewController alloc]initWithNibName:@"HomeViewController" bundle:nil];
+    VanNavigationController *navigationController = [[VanNavigationController alloc]initWithRootViewController:homeViewControllers];
+    self.window.rootViewController  = navigationController;
+    [self.window makeKeyAndVisible];
     return YES;
 }
 
