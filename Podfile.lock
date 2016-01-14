@@ -23,20 +23,36 @@ PODS:
   - AFNetworking/UIKit (2.6.3):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
-  - Bolts/Tasks (1.5.0)
+  - Bolts/Tasks (1.6.0)
+  - Crashlytics (3.5.0):
+    - Fabric (~> 1.6.0)
   - DateTools (1.7.0)
+  - DKNightVersion (0.9.1):
+    - DKNightVersion/Core (= 0.9.1)
+    - DKNightVersion/Generator (= 0.9.1)
+    - DKNightVersion/Helper (= 0.9.1)
+    - DKNightVersion/UIKit (= 0.9.1)
+  - DKNightVersion/Core (0.9.1)
+  - DKNightVersion/Generator (0.9.1)
+  - DKNightVersion/Helper (0.9.1)
+  - DKNightVersion/UIKit (0.9.1):
+    - DKNightVersion/Core
+  - Fabric (1.6.2)
   - HMSegmentedControl (1.5.2)
-  - Parse (1.10.0):
+  - Parse (1.12.0):
     - Bolts/Tasks (~> 1.5)
-  - Realm (0.96.2):
-    - Realm/Headers (= 0.96.2)
-  - Realm/Headers (0.96.2)
-  - StreamingKit (0.1.26)
+  - Realm (0.97.0):
+    - Realm/Headers (= 0.97.0)
+  - Realm/Headers (0.97.0)
+  - StreamingKit (0.1.29)
 
 DEPENDENCIES:
   - AFNetworkActivityLogger (~> 2.0)
   - AFNetworking (~> 2.6)
+  - Crashlytics
   - DateTools (~> 1.7)
+  - DKNightVersion (~> 0.9.0)
+  - Fabric
   - HMSegmentedControl (~> 1.5)
   - Parse (~> 1.10)
   - Realm
@@ -45,11 +61,14 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   AFNetworkActivityLogger: 121486778117d53b3ab1c61d264b88081d0c3eee
   AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
-  Bolts: 722ab9a4f8b50fc4ed1b9998a5a7a2b3f16d80b4
+  Bolts: f52a250053bb517ca874523c3913776359ab3def
+  Crashlytics: fabfd45d0e8b8dc936c682b97e302b9a49a1c827
   DateTools: 53288ee8b905fdc75897a1e6b5cc0144b14cba60
+  DKNightVersion: 0df880cce15896ea28d1faefaa07e58541593d10
+  Fabric: e8296d4a1abb3c5eed770cc86b311c862f51d340
   HMSegmentedControl: 83b9686022d2176fb6457d2bdb61e5d6393fed7d
-  Parse: 90b2544822200f84b18bfacc4e8b0a3a6c3584a2
-  Realm: 3ce8448151c571e90b85002d984d7f93f54fc8a3
-  StreamingKit: e4fc11f28c32f542266b4f0dd960e4c89fd099dd
+  Parse: de2c52a9a1421b91ae7594ab8ce191afd184f19b
+  Realm: b498a6fb9d288b171ff98d0e2d4384c295be8990
+  StreamingKit: c329785aaef3ac142d4ae388345bfe1ed23cfd45
 
 COCOAPODS: 0.39.0

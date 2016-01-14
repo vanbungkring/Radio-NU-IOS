@@ -10,6 +10,9 @@ target 'Radio' do
     pod 'Parse', '~> 1.10'
     pod 'DateTools', '~> 1.7'
     pod 'HMSegmentedControl', '~> 1.5'
+    pod 'Fabric'
+    pod "DKNightVersion", "~> 0.9.0"
+    pod 'Crashlytics'
     pod 'Realm'
     
 

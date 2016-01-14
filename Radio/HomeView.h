@@ -11,5 +11,7 @@
 @interface HomeView : UIView
 @property (weak, nonatomic) IBOutlet UIView *contentContainerView;
 - (void)addSchedulePageView:(UIView *)view;
+- (void)addQuranicPageView:(UIView *)view;
+- (void)addRadioStreamPageView:(UIView *)view;
 
 @end

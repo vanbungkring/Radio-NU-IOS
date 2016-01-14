@@ -10,6 +10,10 @@
 #import "HomeViewController.h"
 #import "VanNavigationController.h"
 #import "ScheduleDataModels.h"
+#import <Fabric/Fabric.h>
+#import <AVFoundation/AVFoundation.h>
+#import <Crashlytics/Crashlytics.h>
+#import <DKNightVersion.h>
 #import <AFNetworkActivityLogger/AFNetworkActivityLogger.h>
 @interface AppDelegate ()
 
@@ -20,8 +24,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    
-    
+    [Fabric with:@[[Crashlytics class]]];
+
+   [DKNightVersionManager nightFalling];
     [ScheduleResponse getScheduleWithCompletionBlock:nil];
     [[AFNetworkActivityLogger sharedLogger] startLogging];
     [AFNetworkActivityLogger sharedLogger].level = AFLoggerLevelDebug;
@@ -40,6 +45,7 @@
 }
 
 - (void)applicationDidEnterBackground:(UIApplication *)application {
+    [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
 }

@@ -23,12 +23,11 @@
     static NSString *CellIdentifier = @"ScheduleTableViewCell";
     ScheduleTableViewCell *cell = (ScheduleTableViewCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (!cell) {
-        NSArray *nib = [[NSBundle mainBundle] loadNibNamed:CellIdentifier
-                                                     owner:self
-                                                   options:nil];
-        cell = nib[0];
+        UINib *cellNib = [UINib nibWithNibName:CellIdentifier bundle:nil];
+        [tableView registerNib:cellNib forCellReuseIdentifier:CellIdentifier];
+        cell = [[NSBundle mainBundle] loadNibNamed:CellIdentifier owner:self options:nil][0];
     }
-    [cell setResult:schedule];
+    [cell setSchedule:schedule];
     return cell;
 }
 - (NSAttributedString *)setAttributeStringForLocations:(NSString *)stringSource {

@@ -9,9 +9,9 @@
 #import <UIKit/UIKit.h>
 @class ScheduleResults;
 @interface ScheduleTableViewCell : UITableViewCell
+@property (nonatomic,strong)ScheduleResults *schedule;
 @property (weak, nonatomic) IBOutlet UILabel *scheduleTimeLabel;
-@property (weak, nonatomic) IBOutlet UIView *dotViewIndicator;
 @property (weak, nonatomic) IBOutlet UILabel *scheduleNameLabel;
-@property (nonatomic,strong)ScheduleResults *result;
-
+@property (weak, nonatomic) IBOutlet UIView *scheduleTimelineViewIndicator;
+@property (weak, nonatomic) IBOutlet UILabel *scheduleExcerptLabel;
 @end

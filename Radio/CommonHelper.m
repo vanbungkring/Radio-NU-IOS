@@ -15,6 +15,7 @@
 #import <sys/types.h>
 #import <sys/sysctl.h>
 @implementation CommonHelper
+
 + (NSDate *)currentDate {
      return [NSDate date];
 }

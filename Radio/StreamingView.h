@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface StreamingView : UIView
+@property (weak, nonatomic) IBOutlet UIButton *playButton;
 
 @end

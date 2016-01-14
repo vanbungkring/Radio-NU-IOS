@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="QuranicViewController">
+            <connections>
+                <outlet property="quranicTableView" destination="v3t-cr-JES" id="9re-BV-hq5"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="v3t-cr-JES">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="3k1-ci-Py6"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="v3t-cr-JES" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="02j-0s-emG"/>
+                <constraint firstAttribute="bottom" secondItem="v3t-cr-JES" secondAttribute="bottom" id="RHk-7k-FZ9"/>
+                <constraint firstAttribute="trailing" secondItem="v3t-cr-JES" secondAttribute="trailing" id="aRf-Yl-nWe"/>
+                <constraint firstItem="v3t-cr-JES" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="tAl-Ad-hbC"/>
+                <constraint firstItem="v3t-cr-JES" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="zHR-5j-ZmM"/>
+                <constraint firstItem="v3t-cr-JES" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" id="zqf-s7-cjq"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="331" y="99"/>
+        </view>
+    </objects>
+</document>

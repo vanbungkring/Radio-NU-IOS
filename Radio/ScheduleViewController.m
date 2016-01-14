@@ -12,7 +12,7 @@
 #import "ScheduleTableViewCell.h"
 #import "CommonHelper.h"
 #import "ScheduleDataSource.h"
-#import "ScheduleDataModels.h"
+#import "Schedule/ScheduleDataModels.h"
 @interface ScheduleViewController ()
 @property (nonatomic,strong)ScheduleDataSource *dataSource;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -23,33 +23,28 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.dataSource = [[ScheduleDataSource alloc]init];
+    self.tableView.tableFooterView = [UIView new];
     self.tableView.dataSource = self.dataSource;
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updateSchedule) name:fetchScheduleDone object:nil];
     [self updateSchedule];
+    
     // Do any additional setup after loading the view from its nib.
 }
 - (void)updateSchedule {
-    if ([ScheduleResponse allSchedule].count >0) {
-        self.dataSource.scheduleData  =[ScheduleResponse allSchedule];
-        [self.tableView reloadData];
-    }
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.2f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            if ([ScheduleResponse allSchedule].count > 0) {
+                self.dataSource.scheduleData  =[ScheduleResponse allSchedule];
+                [self.tableView reloadData];
+            }
+        });
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+#pragma mark - UITableView delegate
 - (CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (IS_IOS8_OR_ABOVE) {
-        return UITableViewAutomaticDimension;
-    }
-    else {
-        ScheduleTableViewCell *cell = (ScheduleTableViewCell*)[self.dataSource tableView:self.tableView
-                                                                             cellForRowAtIndexPath:indexPath];
-        [cell updateConstraintsIfNeeded];
-        [cell layoutIfNeeded];
-        CGFloat height = [cell.contentView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize].height;
-        return height;
-    }
+    return UITableViewAutomaticDimension;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -57,15 +52,23 @@
         return UITableViewAutomaticDimension;
     }
     else {
-        ScheduleTableViewCell *cell = (ScheduleTableViewCell*)[self.dataSource tableView:self.tableView
-                                                                             cellForRowAtIndexPath:indexPath];
-        [cell updateConstraintsIfNeeded];
-        [cell layoutIfNeeded];
-        CGFloat height = [cell.contentView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize].height;
+        UITableViewCell *orderCell = [self.dataSource tableView:self.tableView
+                                                cellForRowAtIndexPath:indexPath];
+        [orderCell updateConstraintsIfNeeded];
+        [orderCell layoutIfNeeded];
+        float height = [orderCell.contentView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize].height;
         return height;
     }
 }
-
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
+    if ([cell respondsToSelector:@selector(setLayoutMargins:)]) {
+        [cell setLayoutMargins:UIEdgeInsetsZero];
+    }
+    
+    if ([tableView respondsToSelector:@selector(setLayoutMargins:)]) {
+        [tableView setLayoutMargins:UIEdgeInsetsZero];
+    }
+}
 /*
 #pragma mark - Navigation
 

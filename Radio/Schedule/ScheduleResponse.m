@@ -9,6 +9,7 @@
 #import "ScheduleResults.h"
 #import "DatabaseManager.h"
 #import "APIManager.h"
+#import <Realm/Realm.h>
 #import <Realm/RLMArray.h>
 #import "StaticAndPreferences.h"
 #import "ScheduleOutputProperties.h"
@@ -213,6 +214,10 @@ NSString *const kScheduleResponseConnectorVersionGuid = @"connectorVersionGuid";
 }
 
 + (void)storeToDb:(NSArray *)schedule {
+    if ([ScheduleResponse allSchedule].count > 0) {
+        [[DataBaseManager manager]deleteObjects:[ScheduleResponse allSchedule]];
+    }
+
     for (int i = 0; i < schedule.count; i++) {
         ScheduleResults *scheduleObject = (ScheduleResults *)[schedule objectAtIndex:i];
         [[DataBaseManager manager] writeOrUpdateObject:scheduleObject];

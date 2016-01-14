@@ -13,26 +13,19 @@
 - (void)awakeFromNib {
     // Initialization code
 }
-- (void)layoutSubviews {
-    self.dotViewIndicator.layer.cornerRadius = self.dotViewIndicator.frame.size.width/2;
-    self.dotViewIndicator.layer.masksToBounds = YES;
-}
+
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];
-
+    
     // Configure the view for the selected state
 }
-- (void)setResult:(ScheduleResults *)result {
-    self.scheduleTimeLabel.text = result.firstValue;
-    self.scheduleNameLabel.text = result.value1;
-    CABasicAnimation *theAnimation;
-    
-    theAnimation=[CABasicAnimation animationWithKeyPath:@"opacity"];
-    theAnimation.duration=1.5;
-    theAnimation.repeatCount=HUGE_VALF;
-    theAnimation.autoreverses=YES;
-    theAnimation.fromValue=[NSNumber numberWithFloat:1.0];
-    theAnimation.toValue=[NSNumber numberWithFloat:0.0];
-    [self.dotViewIndicator.layer addAnimation:theAnimation forKey:@"animateOpacity"];
+- (void)setSchedule:(ScheduleResults *)schedule {
+    self.scheduleTimeLabel.text = schedule.firstValue;
+    self.scheduleNameLabel.text = [schedule.value1 capitalizedString];
+    self.scheduleExcerptLabel.text = [schedule.value2 capitalizedString];
+    self.scheduleTimelineViewIndicator.layer.cornerRadius = self.scheduleTimelineViewIndicator.frame.size.width/2;
+    self.scheduleTimelineViewIndicator.layer.borderWidth = 1.0f;
+    self.scheduleTimelineViewIndicator.layer.borderColor = [UIColor whiteColor].CGColor;
+    self.scheduleTimelineViewIndicator.layer.masksToBounds = YES;
 }
 @end

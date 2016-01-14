@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController">
             <connections>
+                <outlet property="homeScrollView" destination="4eN-VO-Cwf" id="ThZ-i1-T7S"/>
                 <outlet property="segmentedControl" destination="dhw-Jc-iaX" id="ehe-8M-hTc"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -19,7 +20,6 @@
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dhw-Jc-iaX" customClass="HMSegmentedControl">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
-                    <animations/>
                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="WnG-1T-QXM"/>
@@ -29,23 +29,20 @@
                     <rect key="frame" x="0.0" y="50" width="320" height="518"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5hb-Wc-7Hk">
-                            <rect key="frame" x="0.0" y="0.0" width="960" height="518"/>
-                            <animations/>
+                            <rect key="frame" x="0.0" y="0.0" width="640" height="518"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </view>
                     </subviews>
-                    <animations/>
                     <constraints>
                         <constraint firstAttribute="trailing" secondItem="5hb-Wc-7Hk" secondAttribute="trailing" id="4nO-ae-fHG"/>
                         <constraint firstItem="5hb-Wc-7Hk" firstAttribute="top" secondItem="4eN-VO-Cwf" secondAttribute="top" id="9uy-Ze-YTt"/>
-                        <constraint firstItem="5hb-Wc-7Hk" firstAttribute="width" secondItem="4eN-VO-Cwf" secondAttribute="width" multiplier="3" id="W94-ss-JLu"/>
+                        <constraint firstItem="5hb-Wc-7Hk" firstAttribute="width" secondItem="4eN-VO-Cwf" secondAttribute="width" multiplier="2" id="W94-ss-JLu"/>
                         <constraint firstItem="5hb-Wc-7Hk" firstAttribute="height" secondItem="4eN-VO-Cwf" secondAttribute="height" id="Wee-Oi-1IN"/>
                         <constraint firstAttribute="bottom" secondItem="5hb-Wc-7Hk" secondAttribute="bottom" id="d0H-Jk-A76"/>
                         <constraint firstItem="5hb-Wc-7Hk" firstAttribute="leading" secondItem="4eN-VO-Cwf" secondAttribute="leading" id="hBF-Ea-vUn"/>
                     </constraints>
                 </scrollView>
             </subviews>
-            <animations/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="dhw-Jc-iaX" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="3CL-hO-3Ly"/>

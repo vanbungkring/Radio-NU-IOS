@@ -7,6 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0004A3381C1348F20046E805 /* ScheduleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0004A3361C1348F20046E805 /* ScheduleTableViewCell.m */; };
+		0004A3391C1348F20046E805 /* ScheduleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0004A3371C1348F20046E805 /* ScheduleTableViewCell.xib */; };
+		0004A3421C134B2E0046E805 /* MuseoSans-300.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0004A33B1C134B2E0046E805 /* MuseoSans-300.otf */; };
+		0004A3431C134B2E0046E805 /* MuseoSans-500.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0004A33C1C134B2E0046E805 /* MuseoSans-500.otf */; };
+		0004A3441C134B2E0046E805 /* MuseoSans-700.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0004A33D1C134B2E0046E805 /* MuseoSans-700.otf */; };
+		0004A3451C134B2E0046E805 /* MuseoSans_100.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0004A33E1C134B2E0046E805 /* MuseoSans_100.otf */; };
+		0004A3461C134B2E0046E805 /* MuseoSans_300.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0004A33F1C134B2E0046E805 /* MuseoSans_300.otf */; };
+		0004A3471C134B2E0046E805 /* MuseoSans_500.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0004A3401C134B2E0046E805 /* MuseoSans_500.otf */; };
+		0004A3481C134B2E0046E805 /* MuseoSans_700.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0004A3411C134B2E0046E805 /* MuseoSans_700.otf */; };
+		0004A34B1C134CF50046E805 /* SeparatorLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0004A34A1C134CF50046E805 /* SeparatorLineView.m */; };
+		0004A3551C1371580046E805 /* QuranicDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 0004A3541C1371580046E805 /* QuranicDataSource.m */; };
+		0004A3661C13723B0046E805 /* QuranicAuthor.m in Sources */ = {isa = PBXBuildFile; fileRef = 0004A35E1C13723B0046E805 /* QuranicAuthor.m */; };
+		0004A3671C13723B0046E805 /* QuranicCustomFields.m in Sources */ = {isa = PBXBuildFile; fileRef = 0004A3601C13723B0046E805 /* QuranicCustomFields.m */; };
+		0004A3681C13723B0046E805 /* QuranicPosts.m in Sources */ = {isa = PBXBuildFile; fileRef = 0004A3631C13723B0046E805 /* QuranicPosts.m */; };
+		0004A3691C13723B0046E805 /* QuranicResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 0004A3651C13723B0046E805 /* QuranicResponse.m */; };
+		0004A36D1C13DE540046E805 /* QuranicTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0004A36B1C13DE540046E805 /* QuranicTableViewCell.m */; };
+		0004A36E1C13DE540046E805 /* QuranicTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0004A36C1C13DE540046E805 /* QuranicTableViewCell.xib */; };
+		0004A3721C13E5690046E805 /* QuranicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0004A3701C13E5690046E805 /* QuranicViewController.m */; };
+		0004A3731C13E5690046E805 /* QuranicViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0004A3711C13E5690046E805 /* QuranicViewController.xib */; };
 		001653201C12009A00498E02 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0016531F1C12009A00498E02 /* main.m */; };
 		001653231C12009A00498E02 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 001653221C12009A00498E02 /* AppDelegate.m */; };
 		0016532B1C12009A00498E02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0016532A1C12009A00498E02 /* Assets.xcassets */; };
@@ -27,17 +46,46 @@
 		0016536A1C120FF200498E02 /* ScheduleResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 001653661C120FF200498E02 /* ScheduleResponse.m */; };
 		0016536B1C120FF200498E02 /* ScheduleResults.m in Sources */ = {isa = PBXBuildFile; fileRef = 001653681C120FF200498E02 /* ScheduleResults.m */; };
 		001653701C12111600498E02 /* APIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0016536F1C12111600498E02 /* APIManager.m */; };
+		00943E921C4756AC00BA3161 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00943E911C4756AC00BA3161 /* AdSupport.framework */; };
+		00943E941C4756AC00BA3161 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00943E931C4756AC00BA3161 /* AVFoundation.framework */; };
 		00A58A3A1C1215170005F32E /* DatabaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A58A391C1215170005F32E /* DatabaseManager.m */; };
 		00A58A3C1C121DBC0005F32E /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00A58A3B1C121DBC0005F32E /* CoreFoundation.framework */; };
 		00A58A3E1C121EE10005F32E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00A58A3D1C121EE10005F32E /* UIKit.framework */; };
 		00A58A411C12293F0005F32E /* CommonHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A58A401C12293F0005F32E /* CommonHelper.m */; };
-		00A58A491C122D690005F32E /* ScheduleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A58A471C122D690005F32E /* ScheduleTableViewCell.m */; };
-		00A58A4A1C122D690005F32E /* ScheduleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00A58A481C122D690005F32E /* ScheduleTableViewCell.xib */; };
 		00A58A4D1C1237870005F32E /* DeviceHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A58A4C1C1237870005F32E /* DeviceHelper.m */; };
 		036989F3AD328DC2400024D9 /* libPods-Radio.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 45F7310F24C8FB1DDF47E970 /* libPods-Radio.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0004A3351C1348F20046E805 /* ScheduleTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleTableViewCell.h; sourceTree = "<group>"; };
+		0004A3361C1348F20046E805 /* ScheduleTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleTableViewCell.m; sourceTree = "<group>"; };
+		0004A3371C1348F20046E805 /* ScheduleTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScheduleTableViewCell.xib; sourceTree = "<group>"; };
+		0004A33B1C134B2E0046E805 /* MuseoSans-300.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MuseoSans-300.otf"; sourceTree = "<group>"; };
+		0004A33C1C134B2E0046E805 /* MuseoSans-500.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MuseoSans-500.otf"; sourceTree = "<group>"; };
+		0004A33D1C134B2E0046E805 /* MuseoSans-700.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MuseoSans-700.otf"; sourceTree = "<group>"; };
+		0004A33E1C134B2E0046E805 /* MuseoSans_100.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MuseoSans_100.otf; sourceTree = "<group>"; };
+		0004A33F1C134B2E0046E805 /* MuseoSans_300.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MuseoSans_300.otf; sourceTree = "<group>"; };
+		0004A3401C134B2E0046E805 /* MuseoSans_500.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MuseoSans_500.otf; sourceTree = "<group>"; };
+		0004A3411C134B2E0046E805 /* MuseoSans_700.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MuseoSans_700.otf; sourceTree = "<group>"; };
+		0004A3491C134CF50046E805 /* SeparatorLineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeparatorLineView.h; sourceTree = "<group>"; };
+		0004A34A1C134CF50046E805 /* SeparatorLineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SeparatorLineView.m; sourceTree = "<group>"; };
+		0004A3531C1371580046E805 /* QuranicDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuranicDataSource.h; sourceTree = "<group>"; };
+		0004A3541C1371580046E805 /* QuranicDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuranicDataSource.m; sourceTree = "<group>"; };
+		0004A35D1C13723B0046E805 /* QuranicAuthor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuranicAuthor.h; sourceTree = "<group>"; };
+		0004A35E1C13723B0046E805 /* QuranicAuthor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuranicAuthor.m; sourceTree = "<group>"; };
+		0004A35F1C13723B0046E805 /* QuranicCustomFields.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuranicCustomFields.h; sourceTree = "<group>"; };
+		0004A3601C13723B0046E805 /* QuranicCustomFields.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuranicCustomFields.m; sourceTree = "<group>"; };
+		0004A3611C13723B0046E805 /* QuranicDataModels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuranicDataModels.h; sourceTree = "<group>"; };
+		0004A3621C13723B0046E805 /* QuranicPosts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuranicPosts.h; sourceTree = "<group>"; };
+		0004A3631C13723B0046E805 /* QuranicPosts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuranicPosts.m; sourceTree = "<group>"; };
+		0004A3641C13723B0046E805 /* QuranicResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuranicResponse.h; sourceTree = "<group>"; };
+		0004A3651C13723B0046E805 /* QuranicResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuranicResponse.m; sourceTree = "<group>"; };
+		0004A36A1C13DE540046E805 /* QuranicTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuranicTableViewCell.h; sourceTree = "<group>"; };
+		0004A36B1C13DE540046E805 /* QuranicTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuranicTableViewCell.m; sourceTree = "<group>"; };
+		0004A36C1C13DE540046E805 /* QuranicTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QuranicTableViewCell.xib; sourceTree = "<group>"; };
+		0004A36F1C13E5690046E805 /* QuranicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuranicViewController.h; sourceTree = "<group>"; };
+		0004A3701C13E5690046E805 /* QuranicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuranicViewController.m; sourceTree = "<group>"; };
+		0004A3711C13E5690046E805 /* QuranicViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QuranicViewController.xib; sourceTree = "<group>"; };
 		0016531B1C12009A00498E02 /* Radio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Radio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0016531F1C12009A00498E02 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		001653211C12009A00498E02 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -76,15 +124,14 @@
 		0016536C1C12107300498E02 /* StaticAndPreferences.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StaticAndPreferences.h; sourceTree = "<group>"; };
 		0016536E1C12111600498E02 /* APIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIManager.h; sourceTree = "<group>"; };
 		0016536F1C12111600498E02 /* APIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIManager.m; sourceTree = "<group>"; };
+		00943E911C4756AC00BA3161 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		00943E931C4756AC00BA3161 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		00A58A381C1215170005F32E /* DatabaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatabaseManager.h; sourceTree = "<group>"; };
 		00A58A391C1215170005F32E /* DatabaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatabaseManager.m; sourceTree = "<group>"; };
 		00A58A3B1C121DBC0005F32E /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		00A58A3D1C121EE10005F32E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		00A58A3F1C12293F0005F32E /* CommonHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonHelper.h; sourceTree = "<group>"; };
 		00A58A401C12293F0005F32E /* CommonHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonHelper.m; sourceTree = "<group>"; };
-		00A58A461C122D690005F32E /* ScheduleTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleTableViewCell.h; sourceTree = "<group>"; };
-		00A58A471C122D690005F32E /* ScheduleTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleTableViewCell.m; sourceTree = "<group>"; };
-		00A58A481C122D690005F32E /* ScheduleTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScheduleTableViewCell.xib; sourceTree = "<group>"; };
 		00A58A4B1C1237870005F32E /* DeviceHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceHelper.h; sourceTree = "<group>"; };
 		00A58A4C1C1237870005F32E /* DeviceHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceHelper.m; sourceTree = "<group>"; };
 		40336771EC57B4E124C61A5A /* Pods-Radio.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Radio.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Radio/Pods-Radio.debug.xcconfig"; sourceTree = "<group>"; };
@@ -97,6 +144,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00943E941C4756AC00BA3161 /* AVFoundation.framework in Frameworks */,
+				00943E921C4756AC00BA3161 /* AdSupport.framework in Frameworks */,
 				00A58A3E1C121EE10005F32E /* UIKit.framework in Frameworks */,
 				00A58A3C1C121DBC0005F32E /* CoreFoundation.framework in Frameworks */,
 				036989F3AD328DC2400024D9 /* libPods-Radio.a in Frameworks */,
@@ -106,6 +155,62 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0004A33A1C134B2E0046E805 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				0004A33B1C134B2E0046E805 /* MuseoSans-300.otf */,
+				0004A33C1C134B2E0046E805 /* MuseoSans-500.otf */,
+				0004A33D1C134B2E0046E805 /* MuseoSans-700.otf */,
+				0004A33E1C134B2E0046E805 /* MuseoSans_100.otf */,
+				0004A33F1C134B2E0046E805 /* MuseoSans_300.otf */,
+				0004A3401C134B2E0046E805 /* MuseoSans_500.otf */,
+				0004A3411C134B2E0046E805 /* MuseoSans_700.otf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		0004A34C1C1353C00046E805 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Header;
+			sourceTree = "<group>";
+		};
+		0004A3521C13713F0046E805 /* Data Source */ = {
+			isa = PBXGroup;
+			children = (
+				0004A3531C1371580046E805 /* QuranicDataSource.h */,
+				0004A3541C1371580046E805 /* QuranicDataSource.m */,
+			);
+			name = "Data Source";
+			sourceTree = "<group>";
+		};
+		0004A3561C1371610046E805 /* Quranic Cell */ = {
+			isa = PBXGroup;
+			children = (
+				0004A36A1C13DE540046E805 /* QuranicTableViewCell.h */,
+				0004A36B1C13DE540046E805 /* QuranicTableViewCell.m */,
+				0004A36C1C13DE540046E805 /* QuranicTableViewCell.xib */,
+			);
+			name = "Quranic Cell";
+			sourceTree = "<group>";
+		};
+		0004A35C1C13723B0046E805 /* Quranic */ = {
+			isa = PBXGroup;
+			children = (
+				0004A35D1C13723B0046E805 /* QuranicAuthor.h */,
+				0004A35E1C13723B0046E805 /* QuranicAuthor.m */,
+				0004A35F1C13723B0046E805 /* QuranicCustomFields.h */,
+				0004A3601C13723B0046E805 /* QuranicCustomFields.m */,
+				0004A3611C13723B0046E805 /* QuranicDataModels.h */,
+				0004A3621C13723B0046E805 /* QuranicPosts.h */,
+				0004A3631C13723B0046E805 /* QuranicPosts.m */,
+				0004A3641C13723B0046E805 /* QuranicResponse.h */,
+				0004A3651C13723B0046E805 /* QuranicResponse.m */,
+			);
+			path = Quranic;
+			sourceTree = "<group>";
+		};
 		001653121C12009900498E02 = {
 			isa = PBXGroup;
 			children = (
@@ -144,6 +249,7 @@
 		0016531E1C12009A00498E02 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0004A33A1C134B2E0046E805 /* Font */,
 				0016531F1C12009A00498E02 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -170,6 +276,8 @@
 				00A58A401C12293F0005F32E /* CommonHelper.m */,
 				00A58A4B1C1237870005F32E /* DeviceHelper.h */,
 				00A58A4C1C1237870005F32E /* DeviceHelper.m */,
+				0004A3491C134CF50046E805 /* SeparatorLineView.h */,
+				0004A34A1C134CF50046E805 /* SeparatorLineView.m */,
 			);
 			name = Common;
 			sourceTree = "<group>";
@@ -219,6 +327,7 @@
 		001653461C120AC000498E02 /* Jadwal */ = {
 			isa = PBXGroup;
 			children = (
+				0004A34C1C1353C00046E805 /* Header */,
 				00A58A421C122D140005F32E /* Cell */,
 				0016535C1C120F0600498E02 /* Data Source */,
 				001653541C120D8500498E02 /* ScheduleViewController.h */,
@@ -233,6 +342,11 @@
 		001653481C120AD600498E02 /* Quranic */ = {
 			isa = PBXGroup;
 			children = (
+				0004A3561C1371610046E805 /* Quranic Cell */,
+				0004A3521C13713F0046E805 /* Data Source */,
+				0004A36F1C13E5690046E805 /* QuranicViewController.h */,
+				0004A3701C13E5690046E805 /* QuranicViewController.m */,
+				0004A3711C13E5690046E805 /* QuranicViewController.xib */,
 			);
 			name = Quranic;
 			sourceTree = "<group>";
@@ -249,6 +363,7 @@
 		001653601C120FEB00498E02 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				0004A35C1C13723B0046E805 /* Quranic */,
 				001653611C120FF200498E02 /* Schedule */,
 			);
 			name = Models;
@@ -282,9 +397,9 @@
 		00A58A421C122D140005F32E /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				00A58A461C122D690005F32E /* ScheduleTableViewCell.h */,
-				00A58A471C122D690005F32E /* ScheduleTableViewCell.m */,
-				00A58A481C122D690005F32E /* ScheduleTableViewCell.xib */,
+				0004A3351C1348F20046E805 /* ScheduleTableViewCell.h */,
+				0004A3361C1348F20046E805 /* ScheduleTableViewCell.m */,
+				0004A3371C1348F20046E805 /* ScheduleTableViewCell.xib */,
 			);
 			name = Cell;
 			sourceTree = "<group>";
@@ -292,6 +407,8 @@
 		5F0821C010EC9BEC60553486 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				00943E931C4756AC00BA3161 /* AVFoundation.framework */,
+				00943E911C4756AC00BA3161 /* AdSupport.framework */,
 				00A58A3D1C121EE10005F32E /* UIKit.framework */,
 				00A58A3B1C121DBC0005F32E /* CoreFoundation.framework */,
 				45F7310F24C8FB1DDF47E970 /* libPods-Radio.a */,
@@ -321,6 +438,7 @@
 				001653191C12009A00498E02 /* Resources */,
 				21682AF6396F887F245791C7 /* Embed Pods Frameworks */,
 				540C70D8E635B09E50F72137 /* Copy Pods Resources */,
+				0004A3741C141ADA0046E805 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -342,6 +460,15 @@
 				TargetAttributes = {
 					0016531A1C12009A00498E02 = {
 						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = EF9SC2ZZ25;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -368,18 +495,40 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0004A3431C134B2E0046E805 /* MuseoSans-500.otf in Resources */,
 				0016532E1C12009A00498E02 /* LaunchScreen.storyboard in Resources */,
+				0004A3731C13E5690046E805 /* QuranicViewController.xib in Resources */,
 				0016534D1C120AEB00498E02 /* StreamingViewController.xib in Resources */,
 				001653581C120D8500498E02 /* ScheduleViewController.xib in Resources */,
 				0016532B1C12009A00498E02 /* Assets.xcassets in Resources */,
-				00A58A4A1C122D690005F32E /* ScheduleTableViewCell.xib in Resources */,
+				0004A3421C134B2E0046E805 /* MuseoSans-300.otf in Resources */,
+				0004A3471C134B2E0046E805 /* MuseoSans_500.otf in Resources */,
+				0004A3451C134B2E0046E805 /* MuseoSans_100.otf in Resources */,
+				0004A3481C134B2E0046E805 /* MuseoSans_700.otf in Resources */,
+				0004A3391C1348F20046E805 /* ScheduleTableViewCell.xib in Resources */,
+				0004A3461C134B2E0046E805 /* MuseoSans_300.otf in Resources */,
 				0016533B1C12020600498E02 /* HomeViewController.xib in Resources */,
+				0004A3441C134B2E0046E805 /* MuseoSans-700.otf in Resources */,
+				0004A36E1C13DE540046E805 /* QuranicTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0004A3741C141ADA0046E805 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" 4165a61ef093b00352a634db8c625bdbd68ff756 eb6ccec33a3a87d11b8db531559c5d421872993e1fe44eaff47e42ff86e26e3d";
+		};
 		21682AF6396F887F245791C7 /* Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -439,17 +588,25 @@
 				0016536A1C120FF200498E02 /* ScheduleResponse.m in Sources */,
 				0016534C1C120AEB00498E02 /* StreamingViewController.m in Sources */,
 				0016535B1C120D9600498E02 /* ScheduleView.m in Sources */,
+				0004A3661C13723B0046E805 /* QuranicAuthor.m in Sources */,
 				001653441C12024B00498E02 /* BaseViewController.m in Sources */,
 				001653401C12023800498E02 /* VanNavigationController.m in Sources */,
 				001653201C12009A00498E02 /* main.m in Sources */,
 				0016535F1C120F1D00498E02 /* ScheduleDataSource.m in Sources */,
-				00A58A491C122D690005F32E /* ScheduleTableViewCell.m in Sources */,
 				001653691C120FF200498E02 /* ScheduleOutputProperties.m in Sources */,
 				0016533A1C12020600498E02 /* HomeViewController.m in Sources */,
+				0004A3681C13723B0046E805 /* QuranicPosts.m in Sources */,
+				0004A3381C1348F20046E805 /* ScheduleTableViewCell.m in Sources */,
 				00A58A411C12293F0005F32E /* CommonHelper.m in Sources */,
+				0004A3551C1371580046E805 /* QuranicDataSource.m in Sources */,
+				0004A3671C13723B0046E805 /* QuranicCustomFields.m in Sources */,
 				00A58A3A1C1215170005F32E /* DatabaseManager.m in Sources */,
 				001653571C120D8500498E02 /* ScheduleViewController.m in Sources */,
+				0004A36D1C13DE540046E805 /* QuranicTableViewCell.m in Sources */,
+				0004A3691C13723B0046E805 /* QuranicResponse.m in Sources */,
 				001653501C120AF900498E02 /* StreamingView.m in Sources */,
+				0004A3721C13E5690046E805 /* QuranicViewController.m in Sources */,
+				0004A34B1C134CF50046E805 /* SeparatorLineView.m in Sources */,
 				001653701C12111600498E02 /* APIManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -555,11 +712,14 @@
 			baseConfigurationReference = 40336771EC57B4E124C61A5A /* Pods-Radio.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Radio/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.netra.app.Radio;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -569,11 +729,14 @@
 			baseConfigurationReference = BA23F7DE3C9D0D72293A3B0D /* Pods-Radio.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Radio/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.netra.app.Radio;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
