@@ -9,10 +9,12 @@ target 'Radio' do
     pod 'AFNetworkActivityLogger', '~> 2.0'
     pod 'Parse', '~> 1.10'
     pod 'DateTools', '~> 1.7'
+    pod 'PulsingHalo', '~> 0.0'
     pod 'HMSegmentedControl', '~> 1.5'
     pod 'Fabric'
     pod "DKNightVersion", "~> 0.9.0"
     pod 'Crashlytics'
+    pod 'DZNEmptyDataSet', '~> 1.7'
     pod 'Realm'
     
 

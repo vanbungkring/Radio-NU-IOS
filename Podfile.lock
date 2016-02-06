@@ -24,8 +24,8 @@ PODS:
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
   - Bolts/Tasks (1.6.0)
-  - Crashlytics (3.5.0):
-    - Fabric (~> 1.6.0)
+  - Crashlytics (3.6.0):
+    - Fabric (~> 1.6.3)
   - DateTools (1.7.0)
   - DKNightVersion (0.9.1):
     - DKNightVersion/Core (= 0.9.1)
@@ -37,13 +37,15 @@ PODS:
   - DKNightVersion/Helper (0.9.1)
   - DKNightVersion/UIKit (0.9.1):
     - DKNightVersion/Core
-  - Fabric (1.6.2)
+  - DZNEmptyDataSet (1.7.3)
+  - Fabric (1.6.5)
   - HMSegmentedControl (1.5.2)
   - Parse (1.12.0):
     - Bolts/Tasks (~> 1.5)
-  - Realm (0.97.0):
-    - Realm/Headers (= 0.97.0)
-  - Realm/Headers (0.97.0)
+  - PulsingHalo (0.0.1)
+  - Realm (0.98.0):
+    - Realm/Headers (= 0.98.0)
+  - Realm/Headers (0.98.0)
   - StreamingKit (0.1.29)
 
 DEPENDENCIES:
@@ -52,9 +54,11 @@ DEPENDENCIES:
   - Crashlytics
   - DateTools (~> 1.7)
   - DKNightVersion (~> 0.9.0)
+  - DZNEmptyDataSet (~> 1.7)
   - Fabric
   - HMSegmentedControl (~> 1.5)
   - Parse (~> 1.10)
+  - PulsingHalo (~> 0.0)
   - Realm
   - StreamingKit (~> 0.1)
 
@@ -62,13 +66,15 @@ SPEC CHECKSUMS:
   AFNetworkActivityLogger: 121486778117d53b3ab1c61d264b88081d0c3eee
   AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
   Bolts: f52a250053bb517ca874523c3913776359ab3def
-  Crashlytics: fabfd45d0e8b8dc936c682b97e302b9a49a1c827
+  Crashlytics: e4e8d02914f2608fbc7bf42b1a7af838b0db67a2
   DateTools: 53288ee8b905fdc75897a1e6b5cc0144b14cba60
   DKNightVersion: 0df880cce15896ea28d1faefaa07e58541593d10
-  Fabric: e8296d4a1abb3c5eed770cc86b311c862f51d340
+  DZNEmptyDataSet: dd7cca17c1d07dfa78956859b1e70a52505678ef
+  Fabric: 338ffd3c2afcab120638907b4251189de9ad17b3
   HMSegmentedControl: 83b9686022d2176fb6457d2bdb61e5d6393fed7d
   Parse: de2c52a9a1421b91ae7594ab8ce191afd184f19b
-  Realm: b498a6fb9d288b171ff98d0e2d4384c295be8990
+  PulsingHalo: 1583823bd6c989fff3469bb417bc42f0d268f98e
+  Realm: 28efc598b8b1b378d27a222d9fc037a29ae68642
   StreamingKit: c329785aaef3ac142d4ae388345bfe1ed23cfd45
 
 COCOAPODS: 0.39.0

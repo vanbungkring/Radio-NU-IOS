@@ -80,7 +80,7 @@ const NSInteger REALM_SCHEMA_VERSION = 3;
 
 - (void)writeOrUpdateObject:(RLMObject *)object {
     [[RLMRealm defaultRealm] beginWriteTransaction];
-    [[object class] createOrUpdateInRealm:[RLMRealm defaultRealm] withObject:object];
+    [[object class] createOrUpdateInRealm:[RLMRealm defaultRealm] withValue:object];
     [[RLMRealm defaultRealm] commitWriteTransaction];
 }
 

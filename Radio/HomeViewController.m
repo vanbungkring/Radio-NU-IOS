@@ -29,7 +29,7 @@
     self.segmentedControl.sectionTitles = @[@"Jadwal", @"Radio"];
     self.segmentedControl.selectionStyle = HMSegmentedControlSelectionStyleFullWidthStripe;
     self.segmentedControl.selectionIndicatorLocation = HMSegmentedControlSelectionIndicatorLocationDown;
-    self.segmentedControl.selectionIndicatorColor = [UIColor colorWithRed:0.17 green:0.75 blue:0.73 alpha:1.00];
+    self.segmentedControl.selectionIndicatorColor = [UIColor colorWithRed:0.129 green:0.627 blue:0.141 alpha:1];
     self.segmentedControl.selectionIndicatorHeight = 2.0f;
     [self.segmentedControl addTarget:self action:@selector(segmentedControlChangedValue:) forControlEvents:UIControlEventValueChanged];
     //    self.segmentedControls.titleTextAttributes = @{NSForegroundColorAttributeName : [UIColor colorWithRed:0.17 green:0.75 blue:0.73 alpha:0.5],NSFontAttributeName:[UIFont montserratFontOfSize:15]};

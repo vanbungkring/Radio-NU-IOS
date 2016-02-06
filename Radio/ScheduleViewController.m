@@ -25,7 +25,8 @@
     self.dataSource = [[ScheduleDataSource alloc]init];
     self.tableView.tableFooterView = [UIView new];
     self.tableView.dataSource = self.dataSource;
-        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updateSchedule) name:fetchScheduleDone object:nil];
+    self.tableView.allowsSelection = NO;
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updateSchedule) name:fetchScheduleDone object:nil];
     [self updateSchedule];
     
     // Do any additional setup after loading the view from its nib.
@@ -35,6 +36,10 @@
             if ([ScheduleResponse allSchedule].count > 0) {
                 self.dataSource.scheduleData  =[ScheduleResponse allSchedule];
                 [self.tableView reloadData];
+            }
+            else {
+                NSLog(@"jadwal is empty");
+                ///empty state
             }
         });
 }
