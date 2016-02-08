@@ -10,22 +10,30 @@
 #import "ScheduleView.h"
 #import "StaticAndPreferences.h"
 #import "ScheduleTableViewCell.h"
+#import "UIScrollView+EmptyDataSet.h"
 #import "CommonHelper.h"
 #import "ScheduleDataSource.h"
 #import "Schedule/ScheduleDataModels.h"
 @interface ScheduleViewController ()
 @property (nonatomic,strong)ScheduleDataSource *dataSource;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (weak, nonatomic) IBOutlet UIView *emptyState;
 @end
 
 @implementation ScheduleViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.emptyState.hidden = YES;
     self.dataSource = [[ScheduleDataSource alloc]init];
     self.tableView.tableFooterView = [UIView new];
     self.tableView.dataSource = self.dataSource;
     self.tableView.allowsSelection = NO;
+    [ScheduleResponse getScheduleWithCompletionBlock:^(NSArray *json, NSError *error) {
+        if(!error){
+            [self updateSchedule];
+        }
+    }];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updateSchedule) name:fetchScheduleDone object:nil];
     [self updateSchedule];
     
@@ -33,12 +41,12 @@
 }
 - (void)updateSchedule {
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.2f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-            if ([ScheduleResponse allSchedule].count > 0) {
+            if ([ScheduleResponse allSchedule].count > 1) {
                 self.dataSource.scheduleData  =[ScheduleResponse allSchedule];
                 [self.tableView reloadData];
             }
             else {
-                NSLog(@"jadwal is empty");
+                self.emptyState.hidden = false;
                 ///empty state
             }
         });

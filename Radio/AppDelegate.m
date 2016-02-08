@@ -27,7 +27,7 @@
     [Fabric with:@[[Crashlytics class]]];
 
    [DKNightVersionManager nightFalling];
-    [ScheduleResponse getScheduleWithCompletionBlock:nil];
+    
     [[AFNetworkActivityLogger sharedLogger] startLogging];
     [AFNetworkActivityLogger sharedLogger].level = AFLoggerLevelDebug;
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
@@ -36,6 +36,10 @@
     VanNavigationController *navigationController = [[VanNavigationController alloc]initWithRootViewController:homeViewControllers];
     self.window.rootViewController  = navigationController;
     [self.window makeKeyAndVisible];
+    
+    NSError* error;
+    
+    [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:&error];
     return YES;
 }
 
@@ -51,6 +55,7 @@
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {
+    [[UIApplication sharedApplication] beginReceivingRemoteControlEvents];
     // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
 }
 

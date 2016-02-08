@@ -48,6 +48,7 @@
 		001653701C12111600498E02 /* APIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0016536F1C12111600498E02 /* APIManager.m */; };
 		00943E921C4756AC00BA3161 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00943E911C4756AC00BA3161 /* AdSupport.framework */; };
 		00943E941C4756AC00BA3161 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00943E931C4756AC00BA3161 /* AVFoundation.framework */; };
+		009B3AE01C67958E007C1AA1 /* Elevate_PersonalUse.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 009B3ADF1C67948B007C1AA1 /* Elevate_PersonalUse.ttf */; };
 		00A58A3A1C1215170005F32E /* DatabaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A58A391C1215170005F32E /* DatabaseManager.m */; };
 		00A58A3C1C121DBC0005F32E /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00A58A3B1C121DBC0005F32E /* CoreFoundation.framework */; };
 		00A58A3E1C121EE10005F32E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00A58A3D1C121EE10005F32E /* UIKit.framework */; };
@@ -126,6 +127,7 @@
 		0016536F1C12111600498E02 /* APIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIManager.m; sourceTree = "<group>"; };
 		00943E911C4756AC00BA3161 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		00943E931C4756AC00BA3161 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		009B3ADF1C67948B007C1AA1 /* Elevate_PersonalUse.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Elevate_PersonalUse.ttf; sourceTree = "<group>"; };
 		00A58A381C1215170005F32E /* DatabaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatabaseManager.h; sourceTree = "<group>"; };
 		00A58A391C1215170005F32E /* DatabaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatabaseManager.m; sourceTree = "<group>"; };
 		00A58A3B1C121DBC0005F32E /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
@@ -158,6 +160,7 @@
 		0004A33A1C134B2E0046E805 /* Font */ = {
 			isa = PBXGroup;
 			children = (
+				009B3ADF1C67948B007C1AA1 /* Elevate_PersonalUse.ttf */,
 				0004A33B1C134B2E0046E805 /* MuseoSans-300.otf */,
 				0004A33C1C134B2E0046E805 /* MuseoSans-500.otf */,
 				0004A33D1C134B2E0046E805 /* MuseoSans-700.otf */,
@@ -496,6 +499,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0004A3431C134B2E0046E805 /* MuseoSans-500.otf in Resources */,
+				009B3AE01C67958E007C1AA1 /* Elevate_PersonalUse.ttf in Resources */,
 				0016532E1C12009A00498E02 /* LaunchScreen.storyboard in Resources */,
 				0004A3731C13E5690046E805 /* QuranicViewController.xib in Resources */,
 				0016534D1C120AEB00498E02 /* StreamingViewController.xib in Resources */,
@@ -711,13 +715,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 40336771EC57B4E124C61A5A /* Pods-Radio.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Radio/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.netra.app.Radio;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.netra.Radio-Dakwah";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -728,13 +732,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BA23F7DE3C9D0D72293A3B0D /* Pods-Radio.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Radio/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.netra.app.Radio;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.netra.Radio-Dakwah";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;

@@ -1,9 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Elevate_PersonalUse.ttf">
+            <string>ElevatePERSONALUSEONLY</string>
+        </mutableArray>
+        <mutableArray key="MuseoSans-500.otf">
+            <string>MuseoSans-500</string>
+        </mutableArray>
+        <mutableArray key="MuseoSans_100.otf">
+            <string>MuseoSans-100</string>
+        </mutableArray>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StreamingViewController">
             <connections>
@@ -15,22 +26,47 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AmE-l6-kIn">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AmE-l6-kIn">
                     <rect key="frame" x="10" y="417" width="300" height="41"/>
+                    <color key="backgroundColor" red="0.12941176470588234" green="0.62745098039215685" blue="0.14117647058823529" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="41" id="wj6-G4-5iM"/>
                     </constraints>
-                    <state key="normal" title="Button"/>
+                    <fontDescription key="fontDescription" name="MuseoSans-500" family="Museo Sans" pointSize="18"/>
+                    <state key="normal" title="Play"/>
                     <connections>
                         <action selector="playDidTapped:" destination="-1" eventType="touchUpInside" id="q3N-jk-vUA"/>
                     </connections>
                 </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="radio" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iff-9Y-8hu">
+                    <rect key="frame" x="39" y="188" width="243" height="59"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="59" id="Fj5-bU-C2J"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="ElevatePERSONALUSEONLY" family="Elevate PERSONAL USE ONLY" pointSize="57"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Suara Nahdlatul Ulama" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nl6-Mw-RLE">
+                    <rect key="frame" x="73" y="255" width="174" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="Ni3-n2-sby"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="MuseoSans-100" family="Museo Sans" pointSize="17"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
-            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
+                <constraint firstItem="nl6-Mw-RLE" firstAttribute="top" secondItem="Iff-9Y-8hu" secondAttribute="bottom" constant="8" id="Czo-SX-TyS"/>
                 <constraint firstAttribute="bottom" secondItem="AmE-l6-kIn" secondAttribute="bottom" constant="110" id="E0E-vG-GI5"/>
                 <constraint firstItem="AmE-l6-kIn" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="IQ3-HS-JW0"/>
+                <constraint firstItem="Iff-9Y-8hu" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="188" id="KSs-L6-iI1"/>
                 <constraint firstAttribute="trailing" secondItem="AmE-l6-kIn" secondAttribute="trailing" constant="10" id="QUu-vq-EVI"/>
+                <constraint firstItem="nl6-Mw-RLE" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="cf9-mg-8VE"/>
+                <constraint firstItem="Iff-9Y-8hu" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="39" id="ssq-Yj-zoF"/>
+                <constraint firstAttribute="trailing" secondItem="Iff-9Y-8hu" secondAttribute="trailing" constant="38" id="z6g-3w-cay"/>
             </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
             <connections>

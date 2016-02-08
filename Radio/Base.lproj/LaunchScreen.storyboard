@@ -1,9 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Elevate_PersonalUse.ttf">
+            <string>ElevatePERSONALUSEONLY</string>
+        </mutableArray>
+        <mutableArray key="MuseoSans_100.otf">
+            <string>MuseoSans-100</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="EHf-IW-A2E">
@@ -14,10 +23,39 @@
                         <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="radio" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jet-mY-AUe">
+                                <rect key="frame" x="35" y="223" width="251" height="59"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="59" id="lkq-Pf-403"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ElevatePERSONALUSEONLY" family="Elevate PERSONAL USE ONLY" pointSize="57"/>
+                                <color key="textColor" red="0.12941176469999999" green="0.62745098040000002" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Suara Nahdlatul Ulama" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zJb-XF-gau">
+                                <rect key="frame" x="69" y="282" width="183" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="183" id="a5R-eK-r5O"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MuseoSans-100" family="Museo Sans" pointSize="17"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Jet-mY-AUe" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="203" id="1yh-gb-cah"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="zJb-XF-gau" secondAttribute="bottom" constant="257" id="4Nf-Td-nfN"/>
+                            <constraint firstItem="Jet-mY-AUe" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="19" id="6my-L2-LWj"/>
+                            <constraint firstItem="zJb-XF-gau" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="9Ut-ya-FXJ"/>
+                            <constraint firstItem="zJb-XF-gau" firstAttribute="top" secondItem="Jet-mY-AUe" secondAttribute="bottom" id="Au8-hh-qfn"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Jet-mY-AUe" secondAttribute="trailing" constant="18" id="b4j-Yr-JNv"/>
+                        </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

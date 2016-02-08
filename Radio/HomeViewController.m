@@ -31,11 +31,13 @@
     self.segmentedControl.selectionIndicatorLocation = HMSegmentedControlSelectionIndicatorLocationDown;
     self.segmentedControl.selectionIndicatorColor = [UIColor colorWithRed:0.129 green:0.627 blue:0.141 alpha:1];
     self.segmentedControl.selectionIndicatorHeight = 2.0f;
+    UIFont *font = [UIFont fontWithName:@"MuseoSans-500" size:17.0f];
+    UIFont *font2 = [UIFont fontWithName:@"MuseoSans-500" size:18.0f];
     [self.segmentedControl addTarget:self action:@selector(segmentedControlChangedValue:) forControlEvents:UIControlEventValueChanged];
-    //    self.segmentedControls.titleTextAttributes = @{NSForegroundColorAttributeName : [UIColor colorWithRed:0.17 green:0.75 blue:0.73 alpha:0.5],NSFontAttributeName:[UIFont montserratFontOfSize:15]};
-    //    self.segmentedControl.selectedTitleTextAttributes = @{NSForegroundColorAttributeName : [UIColor colorWithRed:0.17 green:0.75 blue:0.73 alpha:1.00]};
-    // Do any additional setup after loading the view from its nib.
-    ///do schedule
+    self.segmentedControl.titleTextAttributes = @{NSForegroundColorAttributeName : [UIColor darkGrayColor],NSFontAttributeName: font};
+    self.segmentedControl.selectedTitleTextAttributes = @{NSForegroundColorAttributeName : [UIColor colorWithRed:0.129 green:0.627 blue:0.141 alpha:1],NSFontAttributeName: font2};
+    //     Do any additional setup after loading the view from its nib.
+    //    /do schedule
     
     ScheduleViewController *scheduleViewController = [[ScheduleViewController alloc]initWithNibName:@"ScheduleViewController" bundle:nil];
     [self addChildViewController:scheduleViewController];

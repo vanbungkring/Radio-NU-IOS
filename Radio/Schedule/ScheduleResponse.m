@@ -214,15 +214,16 @@ NSString *const kScheduleResponseConnectorVersionGuid = @"connectorVersionGuid";
 }
 
 + (void)storeToDb:(NSArray *)schedule {
-    if ([ScheduleResponse allSchedule].count > 0) {
+    if ([ScheduleResponse allSchedule].count >1) {
         [[DataBaseManager manager]deleteObjects:[ScheduleResponse allSchedule]];
     }
 
     for (int i = 0; i < schedule.count; i++) {
+        NSLog(@"data-->%d",i);
         ScheduleResults *scheduleObject = (ScheduleResults *)[schedule objectAtIndex:i];
         [[DataBaseManager manager] writeOrUpdateObject:scheduleObject];
     }
-    [[NSNotificationCenter defaultCenter] postNotificationName:fetchScheduleDone object:nil];
+   // [[NSNotificationCenter defaultCenter] postNotificationName:fetchScheduleDone object:nil];
 }
 + (NSArray *)allSchedule {
     RLMResults *resultsRealm = [ScheduleResults allObjectsInRealm:[RLMRealm defaultRealm]];

@@ -30,9 +30,11 @@
 - (IBAction)playDidTapped:(id)sender {
     self.view.playButton.selected = !self.view.playButton.selected;
     if (self.view.playButton.selected) {
+        [self.view.playButton setTitle:@"Pause" forState:UIControlStateNormal];
         [self.audioPlayer play:@"http://119.2.80.21:8001/;stream.nsv&type=mp3"];
     }
     else {
+         [self.view.playButton setTitle:@"Play" forState:UIControlStateNormal];
         [self.audioPlayer stop];
     }
     
